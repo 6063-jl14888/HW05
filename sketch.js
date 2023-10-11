@@ -59,5 +59,6 @@ function draw() {
     ellipse(x*100+100, y-500, d/4, d/4);
     }
   noLoop();
+
 }
 
