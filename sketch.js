@@ -43,7 +43,7 @@ function draw() {
     let y = map(data[i].LATITUDE, LATITUDEMin, LATITUDEMax, 0, height);
     let d = map(data[i]["ZIP CODE"], ZIPCODEMin, ZIPCODEMax, 0, height);
     stroke(d/100, 100, d/50)
-    ellipse(x*100, y-500, d/2, d/2);
+    ellipse(x*100+100, y-500, d/4, d/4);
     }
   noLoop();
 }
