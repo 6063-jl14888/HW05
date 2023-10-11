@@ -7,37 +7,16 @@ Markdown Cheatsheet (from [https://www.markdownguide.org/cheat-sheet/](https://w
 ---
 ---
 
-# Heading1
-## Heading2
-### Heading3
-#### Heading4
-##### Heading5
-###### Heading6
+In this context, we attempted to visualize data using icons or graphics.
 
-**bold text**
+I chose the dataset "Motor Vehicle Collisions" as my base data. While reading through this data, I noticed that it contained latitude and longitude information, and these numerical values were similar to the coordinate system we established on our canvas – they were both distributed in a grid-like pattern. Therefore, longitude, latitude and the number of zip code from the data became my choice for visualization images.
 
-*italicized text*
+I used the coordinates of longitude and latitude to determine the position of circles, which I displayed on the screen. Since longitude and latitude contain complex numbers, I had to move the canvas's origin to the appropriate position. And also the diameter of the circle is the number of zipcode
 
-~~strikethrough text~~
+The most challenging part for me was figuring out how to get these circular coordinates to appear on the screen, as the sheer volume of data often led to issues with data not displaying correctly.
 
-Ordered List:
-1. First item
-2. Second item
-3. Third item
+However, I'm having trouble changing the stroke color effectively. I'd like it to create a color gradient as the position of the circle changes.
 
-Unordered List:
-- First item
-- Second item
-- Third item
-
-`short code block`
-
-```
-extended code block
-fun() {
-  return 0
-}
-```
 
 Link:  
 [linked text](https://www.example.com)
@@ -50,11 +29,3 @@ Image with url:
 Image on repo:  
 ![image description](./file-name.jpg)
 
-
-To start a new line, add two spaces at the end of a line, like this:  
-this is a new line.
-
-
-To start a new paragraph, leave an empty line between two lines of text.
-
-This is a new paragraph.
