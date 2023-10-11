@@ -36,13 +36,26 @@ function setup() {
 function draw() {
   background(0);
   noFill();
-  stroke(190, 20, 255)
+ 
   translate(100,0)
   for (let i = 0; i < data.length; i++) {
     let x = map(data[i].LONGITUDE,  LONGITUDEMin,  LONGITUDEMax, 0, width);
     let y = map(data[i].LATITUDE, LATITUDEMin, LATITUDEMax, 0, height);
     let d = map(data[i]["ZIP CODE"], ZIPCODEMin, ZIPCODEMax, 0, height);
-    stroke(d/100, 100, d/50)
+    
+    if (x*100+100 > 0 && x*100+100 <= 300) {
+      stroke(190, 20, 10)
+    } 
+    if (x*100+100 > 300 && x*100+100 <= 500) {
+      stroke(190, 20, 255)
+    } 
+    if (x*100+100 > 500 && x*100+100 <= 700) {
+      stroke(80, 20, 200)
+    } 
+    if (x*100+100 > 700 && x*100+100 <= 800) {
+      stroke(176, 252, 216)
+    } 
+  
     ellipse(x*100+100, y-500, d/4, d/4);
     }
   noLoop();
